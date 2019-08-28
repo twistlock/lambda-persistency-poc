@@ -1,23 +1,3 @@
-import yaml
-
-"""
-* Handler
-"""
-def handler(event, context):	
-	try:	
-		raw_data = parse_data_from_event(event)
-		parsed_data = yaml.load(raw_data)
-		upload_to_db(parsed_data)
-	except Exception as e:
-		return build_response({"Status": "Error", "Data": repr(e)})
-
-	return build_response({"Status": "Success"})
-
-
-
-################################################################################################
-
-
 import os
 import yaml
 import io
