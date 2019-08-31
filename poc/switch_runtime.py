@@ -25,7 +25,7 @@ invoke_id = str(inspect.stack()[-2][0].f_globals["_GLOBAL_AWS_REQUEST_ID"])
 
 # Exec the new runtime
 args = [new_runtime_path, invoke_id]
-os.execvp(new_runtime_path, args)
+os.execv(new_runtime_path, args)
 
 
 
