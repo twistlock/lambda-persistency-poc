@@ -1,5 +1,5 @@
 # lambda-persistency-poc
-See [Twistlock Labs](https://www.twistlock.com/labs/) for more info.
+See [Twistlock Labs](https://www.twistlock.com/labs-blog/gaining-persistency-vulnerable-lambdas/) for more info.
  
 A repository containing two POCs of an attacker gaining persistency on a vulnerable AWS python Lambda.
  
