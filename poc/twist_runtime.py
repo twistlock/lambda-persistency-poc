@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 """
-Copyright (c) 2018 Amazon. All rights reserved.
+*twist_runtime.py*
+Most of it is copied from the Lambda python3.7 runtime (bootstrap.py)
+The section at the bottom contains the modifications.
 """
 
 import json
@@ -301,9 +303,13 @@ def init_logger():
     logger_handler.addFilter(LambdaLoggerFilter())
     logger.addHandler(logger_handler)
 
+    
+
+## --------------------------------- Twist runtime --------------------------------- ##
+## --------------------------------- Twist runtime --------------------------------- ##
+## --------------------------------- Twist runtime --------------------------------- ##
 
 
-## --- Twist runtime --- ##
 
 try:
     import requests 
